@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hellen Cordeiro Alves Marquezini - Academic Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll("main section");
+      sections.forEach(section => section.style.display = 'none');
+      const selected = document.getElementById(id);
+      if (selected) selected.style.display = 'block';
+    }
+    window.addEventListener('DOMContentLoaded', () => {
+      showSection('home');
+    });
+  </script>
+</head>
+<body class="bg-white text-zinc-800 font-sans">
+  <div class="max-w-3xl mx-auto px-4 py-8">
+    <header class="mb-10 text-center">
+      <img src="hellen.png" alt="Hellen Cordeiro Alves Marquezini" class="w-32 h-32 mx-auto rounded-full mb-4" />
+      <h1 class="text-4xl font-bold">Hellen Cordeiro Alves Marquezini</h1>
+      <p class="mt-2 text-lg text-zinc-600">PhD candidate in Business Administration, researcher in racial relations and decolonial studies</p>
+    </header>
+
+    <nav class="flex gap-6 text-blue-700 border-b border-zinc-200 pb-4 mb-8 justify-center">
+      <button onclick="showSection('home')" class="hover:underline">Home</button>
+      <button onclick="showSection('research')" class="hover:underline">Research</button>
+      <button onclick="showSection('teaching')" class="hover:underline">Teaching</button>
+      <button onclick="showSection('publications')" class="hover:underline">Publications</button>
+      <button onclick="showSection('blog')" class="hover:underline">Blog</button>
+    </nav>
+
+    <main>
+      <section id="home" class="mb-12 hidden">
+        <h2 class="text-2xl font-semibold mb-2">Home</h2>
+        <p>PhD candidate at FGV/EAESP with international experiences at Victoria University of Wellington and University of Victoria. My research focuses on critical management studies, decoloniality, racial relations, and organizational practices within quilombola and Indigenous communities. I have over 16 years of experience in public administration and a strong commitment to social and educational issues.</p>
+      </section>
+
+      <section id="research" class="mb-12 hidden">
+        <h2 class="text-2xl font-semibold mb-2">Research</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Racial relations in organizations</li>
+          <li>Decoloniality and Southern epistemologies</li>
+          <li>Management in quilombola and Indigenous communities</li>
+          <li>Non-conventional organizations and critiques of mainstream management</li>
+        </ul>
+      </section>
+
+      <section id="teaching" class="mb-12 hidden">
+        <h2 class="text-2xl font-semibold mb-2">Teaching</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>FGV: Teaching Assistant at CEAHS - Communication, Health Economics, Ethics, among others</li>
+          <li>CEFET-MG: Courses on Diversity Management, Organizational Psychology</li>
+          <li>USP/ESALQ: Advisor for MBA theses in People Management and Sales</li>
+        </ul>
+      </section>
+
+      <section id="publications" class="mb-12 hidden">
+        <h2 class="text-2xl font-semibold mb-2">Publications</h2>
+        <div class="space-y-4">
+          <div>
+            <strong>Decisão de (Re)Existir!: Histórias e Modos de Organizar de uma Comunidade Quilombola Mineira</strong><br />
+            <em>Organizações & Sociedade, 2024</em>
+          </div>
+          <div>
+            <strong>O empoderamento feminino como resistência frente ao teto de vidro</strong><br />
+            <em>Caderno de Administração UEM, 2025</em>
+          </div>
+          <div>
+            <strong>A decolonial analysis of race and ethnicity in management textbooks</strong><br />
+            <em>AoM 2024 and Gustavson Research Festival</em>
+          </div>
+        </div>
+        <p class="mt-4">Full list available on my <a href="http://lattes.cnpq.br/7413028541159987" class="text-blue-700 underline" target="_blank">Lattes CV</a></p>
+      </section>
+
+      <section id="blog" class="mb-12 hidden">
+        <h2 class="text-2xl font-semibold mb-2">Blog</h2>
+        <p>Coming soon: reflections on academic life, decolonial debates, and insights on racial relations and education.</p>
+      </section>
+    </main>
+
+    <footer class="pt-6 border-t border-zinc-200 text-sm text-center text-zinc-500">
+      &copy; 2025 Hellen Cordeiro Alves Marquezini
+    </footer>
+  </div>
+</body>
+</html>
