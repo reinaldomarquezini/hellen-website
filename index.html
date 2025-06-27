@@ -16,74 +16,105 @@
       showSection('home');
     });
   </script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-white text-zinc-800 font-sans">
-  <div class="max-w-3xl mx-auto px-4 py-8">
-    <header class="mb-10 text-center">
-      <img src="hellen.png" alt="Hellen Cordeiro Alves Marquezini" class="w-32 h-32 mx-auto rounded-full mb-4" />
-      <h1 class="text-4xl font-bold">Hellen Cordeiro Alves Marquezini</h1>
-      <p class="mt-2 text-lg text-zinc-600">PhD candidate in Business Administration, researcher in racial relations and decolonial studies</p>
-    </header>
+<body class="bg-white text-gray-800">
+  <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50 py-4">
+    <div class="max-w-4xl mx-auto flex justify-center gap-6 text-sm font-medium text-gray-700">
+      <button onclick="showSection('home')" class="hover:text-indigo-700 transition">Home</button>
+      <button onclick="showSection('research')" class="hover:text-indigo-700 transition">Research</button>
+      <button onclick="showSection('teaching')" class="hover:text-indigo-700 transition">Teaching</button>
+      <button onclick="showSection('publications')" class="hover:text-indigo-700 transition">Publications</button>
+      <button onclick="showSection('awards')" class="hover:text-indigo-700 transition">Awards</button>
+      <button onclick="showSection('education')" class="hover:text-indigo-700 transition">Education</button>
+      <button onclick="showSection('blog')" class="hover:text-indigo-700 transition">Blog</button>
+    </div>
+  </nav>
 
-    <nav class="flex gap-6 text-blue-700 border-b border-zinc-200 pb-4 mb-8 justify-center">
-      <button onclick="showSection('home')" class="hover:underline">Home</button>
-      <button onclick="showSection('research')" class="hover:underline">Research</button>
-      <button onclick="showSection('teaching')" class="hover:underline">Teaching</button>
-      <button onclick="showSection('publications')" class="hover:underline">Publications</button>
-      <button onclick="showSection('blog')" class="hover:underline">Blog</button>
-    </nav>
-
+  <div class="max-w-4xl mx-auto px-6 pt-28 pb-10">
     <main>
-      <section id="home" class="mb-12 hidden">
-        <h2 class="text-2xl font-semibold mb-2">Home</h2>
-        <p>PhD candidate at FGV/EAESP with international experiences at Victoria University of Wellington and University of Victoria. My research focuses on critical management studies, decoloniality, racial relations, and organizational practices within quilombola and Indigenous communities. I have over 16 years of experience in public administration and a strong commitment to social and educational issues.</p>
-      </section>
-
-      <section id="research" class="mb-12 hidden">
-        <h2 class="text-2xl font-semibold mb-2">Research</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li>Racial relations in organizations</li>
-          <li>Decoloniality and Southern epistemologies</li>
-          <li>Management in quilombola and Indigenous communities</li>
-          <li>Non-conventional organizations and critiques of mainstream management</li>
-        </ul>
-      </section>
-
-      <section id="teaching" class="mb-12 hidden">
-        <h2 class="text-2xl font-semibold mb-2">Teaching</h2>
-        <ul class="list-disc list-inside space-y-1">
-          <li>FGV: Teaching Assistant at CEAHS - Communication, Health Economics, Ethics, among others</li>
-          <li>CEFET-MG: Courses on Diversity Management, Organizational Psychology</li>
-          <li>USP/ESALQ: Advisor for MBA theses in People Management and Sales</li>
-        </ul>
-      </section>
-
-      <section id="publications" class="mb-12 hidden">
-        <h2 class="text-2xl font-semibold mb-2">Publications</h2>
-        <div class="space-y-4">
-          <div>
-            <strong>Decisão de (Re)Existir!: Histórias e Modos de Organizar de uma Comunidade Quilombola Mineira</strong><br />
-            <em>Organizações & Sociedade, 2024</em>
+      <section id="home" class="mb-20 hidden">
+        <div class="md:flex md:items-center md:gap-12">
+          <div class="md:w-2/3">
+            <h2 class="text-4xl font-bold mb-5 text-indigo-800">Racialized Organizations and Decolonial Possibilities</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+              I am a PhD candidate in Business Administration at FGV/EAESP, with a research focus in Organizational Studies. I hold a Master’s degree in Administration from CEFET/MG, specializing in decision-making processes in organizational settings. I earned my Bachelor's degree in Business Administration from the Federal University of Juiz de Fora and hold a postgraduate certificate in People Management from UEMG. 
+              <br><br>I am a member of the Organizational Studies, Society and Subjectivity Research Group (NOSS). I have worked as a Teaching Assistant in Health Management courses at FGV and as a Research Assistant at GVPesquisa. With 16 years of experience in public sector management, my academic interests include racial relations in organizations, decolonial management, Indigenous and Quilombola organizing, and historical inequalities.
+            </p>
+            <div class="mt-6 space-y-2 text-sm text-gray-700">
+              <p><strong>Institutional Affiliations:</strong></p>
+              <p><strong>2023 – 2023</strong>: PhD Visiting Scholar at Victoria University of Wellington, New Zealand, supervised by Prof. Todd Bridgman. Funded by CAPES PrInt.</p>
+              <p><strong>2024 – 2024</strong>: Visiting Doctoral Fellow at University of Victoria, Canada, supervised by Prof. Diego Coraiola. Funded by ELAP Scholarship (Global Affairs Canada).</p>
+            </div>
+            <div class="mt-6">
+              <a href="http://lattes.cnpq.br/7413028541159987" target="_blank" class="inline-block bg-indigo-600 text-white px-5 py-2 rounded hover:bg-indigo-800">View CV on Lattes</a>
+            </div>
           </div>
-          <div>
-            <strong>O empoderamento feminino como resistência frente ao teto de vidro</strong><br />
-            <em>Caderno de Administração UEM, 2025</em>
-          </div>
-          <div>
-            <strong>A decolonial analysis of race and ethnicity in management textbooks</strong><br />
-            <em>AoM 2024 and Gustavson Research Festival</em>
+          <div class="md:w-1/3 flex justify-center mt-8 md:mt-0">
+            <img src="hellen.png" alt="Hellen Cordeiro Alves Marquezini" class="w-48 h-48 rounded-full shadow-xl object-cover" />
           </div>
         </div>
-        <p class="mt-4">Full list available on my <a href="http://lattes.cnpq.br/7413028541159987" class="text-blue-700 underline" target="_blank">Lattes CV</a></p>
       </section>
 
-      <section id="blog" class="mb-12 hidden">
-        <h2 class="text-2xl font-semibold mb-2">Blog</h2>
-        <p>Coming soon: reflections on academic life, decolonial debates, and insights on racial relations and education.</p>
+      <section id="research" class="mb-20 hidden">
+        <h2 class="text-2xl font-bold text-indigo-800 mb-4">Research</h2>
+        <p class="text-gray-700">
+          My research explores the intersections of racialized organizations, decolonial approaches, and alternative epistemologies. I investigate how Quilombola and Indigenous communities organize and resist dominant managerial logics through culturally rooted practices and worldviews. My doctoral project analyzes the political, social, and epistemic dynamics of these organizations and their contributions to management and organizational theory.
+        </p>
       </section>
+
+      <section id="teaching" class="mb-20 hidden">
+        <h2 class="text-2xl font-bold text-indigo-800 mb-4">Teaching</h2>
+        <ul class="list-disc ml-5 space-y-2 text-gray-700">
+          <li>Teaching Assistant – Health and Hospital Management Program, FGV</li>
+          <li>Research Seminars on Decolonial Studies – Victoria University of Wellington (2023)</li>
+          <li>Guest Lectures on Racial Justice and Management – University of Victoria (2024)</li>
+        </ul>
+      </section>
+
+      <section id="publications" class="mb-20 hidden">
+        <h2 class="text-2xl font-bold text-indigo-800 mb-4">Publications</h2>
+        <ul class="list-disc ml-5 space-y-2 text-gray-700">
+          <li>Morato, T. M. A.; Marquezini, H. C. A.; Guimarães, L. V. M. – Women’s Empowerment Against the Glass Ceiling. Cadernos de Administração UEM, 2025.</li>
+          <li>Marquezini, H. C. A.; Guimarães, L. V. M.; Barreto, R. O. – Life, Death, and Resistance in Quilombola Organizations. Ciências Sociais Unisinos, 2021.</li>
+          <li>Marquezini, H. C. A. – On COVID and Us: Writing from the Field. Revista de Estudos Organizacionais e Sociedade, 2022.</li>
+          <li>Marquezini, H. C. A.; Guimarães, L. V. M.; Menezes, F. P. D. A. – Racial (Un)masking: A Discourse Analysis of The Black President. Recadm, 2021.</li>
+          <li>Marquezini, H. C. A. et al. – Electric Sector through the Lens of Academia. Revista de Administração da UEG, 2020.</li>
+        </ul>
+      </section>
+
+      <section id="awards" class="mb-20 hidden">
+        <h2 class="text-2xl font-bold text-indigo-800 mb-4">Awards</h2>
+        <ul class="list-disc ml-5 space-y-2 text-gray-700">
+          <li>Best Critical Management Learning Paper, Academy of Management (2024)</li>
+          <li>Best Teaching Case Award – EnEPQ ANPAD (2024)</li>
+          <li>Best Paper Award – XV CASI Conference (2023)</li>
+          <li>Best Paper in Gender and Organizational Studies – XV CASI (2023)</li>
+          <li>Outstanding Reviewer Award – RAC Journal (2023)</li>
+        </ul>
+      </section>
+
+      <section id="education" class="mb-20 hidden">
+        <h2 class="text-2xl font-bold text-indigo-800 mb-4">Education</h2>
+        <ul class="list-disc ml-5 space-y-2 text-gray-700">
+          <li>PhD Candidate in Business Administration – FGV/EAESP (Ongoing)</li>
+          <li>Master's in Administration – CEFET/MG (2021)</li>
+          <li>Postgraduate Certificate in People Management – UEMG (2013)</li>
+          <li>Bachelor's in Business Administration – UFJF (2011)</li>
+        </ul>
+      </section>
+
+      <section id="blog" class="mb-20 hidden">
+        <h2 class="text-2xl font-bold text-indigo-800 mb-4">Blog</h2>
+        <p class="text-gray-700">Coming soon: Reflections on decolonial theory, racial justice, and academic life.</p>
+      </section>
+
     </main>
-
-    <footer class="pt-6 border-t border-zinc-200 text-sm text-center text-zinc-500">
+    <footer class="pt-10 border-t text-sm text-center text-gray-500">
       &copy; 2025 Hellen Cordeiro Alves Marquezini
     </footer>
   </div>
